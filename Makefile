@@ -18,3 +18,7 @@ install:
 .PHONY: version
 version:
 	cd website && npm docusaurus --version
+
+.PHONY: update
+update:
+	cd website && npx browserslist@latest --update-db && npm update
