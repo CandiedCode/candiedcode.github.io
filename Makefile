@@ -47,3 +47,7 @@ serve:
 .PHONY: static
 static:
 	hugo -D
+
+.PHONY: static/min
+static/min:
+	hugo --minify
