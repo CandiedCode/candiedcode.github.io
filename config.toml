@@ -1,4 +1,5 @@
 baseURL = "https://candiedcode.github.io"
+languageCode = "en-us"
 title = "CandiedCode"
 themesDir = "themes"
 theme = "m10c"

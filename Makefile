@@ -44,10 +44,6 @@ submodule/update:
 serve:
 	hugo server -D
 
-.PHONY: build
-build:
-	cd website && npm run build
-
-.PHONY: update
-update:
-	cd website && npx browserslist@latest --update-db && npm update
+.PHONY: static
+static:
+	hugo -D
