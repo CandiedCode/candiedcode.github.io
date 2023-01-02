@@ -32,6 +32,10 @@ hugo-soho-theme:
 	&& curl -O https://raw.githubusercontent.com/alexandrevicenzi/soho/master/exampleSite/config.toml \
 	&& git submodule add https://github.com/alexandrevicenzi/soho.git themes/soho
 
+.PHONY: loveit
+loveit:
+	git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+
 .PHONY: m10c
 m10c:
 	git submodule add https://github.com/vaga/hugo-theme-m10c.git themes/m10c
