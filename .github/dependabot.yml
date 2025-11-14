@@ -1,11 +1,19 @@
 version: 2
 updates:
-
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: weekly
+    groups:
+      actions:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
   # Maintain dependencies for git submodules
   - package-ecosystem: "gitsubmodule"
     directory: "/"
